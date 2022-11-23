@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="util.css">
+    <title>Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra</title>
+</head>
+<body>
+    <header class="container ">
+        <nav class="flex spacebetween">
+            <div class="left flex item-center">
+                <img class="logo-img" src="logo.png" alt="">
+                <ul class="flex item-center justify-center">
+                    <li>MEN</li>
+                    <li>WOMEN</li>
+                    <li>KIDS</li>
+                    <li>HOME & LIVING</li>
+                    <li>BEAUTY</li>
+                    <li>STUDIO</li>
+                </ul>
+            </div>
+            <div class="right item-center">
+                <input class="search-inp" placeholder="Search for products, brands and more" type="text">
+                <div class="profile mx-2">Profile</div>
+                <div class="wishlist mx-2">Wishlist</div>
+                <div class="bag mx-2">Bag</div>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="slidepng">
+                <img class="mySlides" src="head/slide1.PNG">
+                <img class="mySlides" src="head/slide2.PNG">
+                <img class="mySlides" src="head/slide3.PNG">
+                <img class="mySlides" src="head/slide4.PNG">
+                <img class="mySlides" src="head/slide5.PNG">
+              
+              <script>
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+              }
+              </script>
+              
+        </div>
+        <h2>DEAL OF THE DAY</h2>
+        <img class="i1-img" src="down/down1.PNG" alt="">
+        <h2>BEST OF MYNTRA EXCLUSIVE BRANDS</h2>
+        <img class="i2-img" src="down/down2.PNG" alt="">
+        <h2>TOP PICKS</h2>
+        <img class="i3-img" src="down/down3.PNG" alt="">
+        <h2>CATEGORIES TO BAG</h2>
+        <img class="i4-img" src="down/down4.PNG" alt="">
+        <h2>DEALS ON TOP BRANDS</h2>
+        <img class="i5-img" src="down/down5.PNG" alt="">
+        <h2>BRANDS AT SLASHED PRICES</h2>
+        <img class="i6-img" src="down/down6.PNG" alt="">
+    </section>
+</body>
+</html>

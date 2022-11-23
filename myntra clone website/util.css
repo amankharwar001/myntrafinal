@@ -1,0 +1,25 @@
+.flex{
+    display: flex;
+}
+.item-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.spacebetween{
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight:bolder;
+}
+.mx-2{
+    margin-right:10px;
+    margin-left:10px;
+}
+section{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}
